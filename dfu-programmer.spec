@@ -1,13 +1,12 @@
 Summary:	Atmel USB DFU programmer
 Summary(pl.UTF-8):	Programator DFU dla układów Atmela z USB
 Name:		dfu-programmer
-Version:	0.5.4
+Version:	0.7.2
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://downloads.sourceforge.net/dfu-programmer/%{name}-%{version}.tar.gz
-# Source0-md5:	707dcd0f957a74e92456ea6919faa772
-Patch0:		%{name}-link.patch
+# Source0-md5:	98641b0a7cf1cc8c8be3584d5552f6d8
 URL:		http://dfu-programmer.sourceforge.net/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
@@ -34,7 +33,6 @@ standardowe programy do DFU nie działają poprawnie z układami Atmela.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__aclocal} -I m4
